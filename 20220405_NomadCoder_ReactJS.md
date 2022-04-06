@@ -25,7 +25,7 @@ hours input
 hours input value 얻기(minutes 참고ㅎㅎ)  
 flip상태에서만 계산된 값 나오게 변경 - 삼항연산자(if문을 인라인 형태로 작성)  
 Flip시 입력값 reset하기  
-```HTML
+```html
 function MinutesToHours() {
       const [amount, setAmount] = React.useState(0);
       const [inverted, setInverted] = React.useState(false);
