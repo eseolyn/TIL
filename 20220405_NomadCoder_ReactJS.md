@@ -25,7 +25,48 @@ hours input
 hours input value 얻기(minutes 참고ㅎㅎ)  
 flip상태에서만 계산된 값 나오게 변경 - 삼항연산자(if문을 인라인 형태로 작성)  
 Flip시 입력값 reset하기  
-
+```
+function MinutesToHours() {
+      const [amount, setAmount] = React.useState(0);
+      const [inverted, setInverted] = React.useState(false);
+      const onChange = (event) => {
+        setAmount(event.target.value);
+      };
+      const reset = () => setAmount(0);
+      const onFlip = () => {
+        setInverted((current) => !current);
+        reset();
+      };
+      return (
+        <div>
+          <div>
+            <label htmlFor="minutes">Minutes</label>
+            <input
+              value={inverted ? amount * 60 : amount}
+              id="minutes"
+              placeholder="Minutes"
+              type="number"
+              onChange={onChange}
+              disabled={inverted}
+            />
+          </div>
+          <div>
+            <label htmlFor="hours">Hours</label>
+            <input
+              value={inverted ? amount : Math.round(amount / 60)}
+              id="hours"
+              placeholder="Hours"
+              type="number"
+              disabled={!inverted}
+              onChange={onChange}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={onFlip}>Invert</button>
+        </div>
+      );
+    }
+```
 ___
 내일 할 일  
 #3.9 code challenge - converter 완성하기
