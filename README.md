@@ -10,22 +10,22 @@ project name
 ---
 #### 바닐라JS로 크롬 앱 만들기   
 > 노마드코더, 챌린지   
-> HTML, CSS, VanillaJS
+> HTML, CSS, VanillaJS   
 > 20220704 ~ 20220718/   
 
 #### 코코아톡 클론코딩   
 > 노마드코더, 챌린지   
-> HTML, CSS
+> HTML, CSS   
 > 20220801 ~ 20220815
 
 #### 바닐라JS로 그림 앱 만들기   
 > 노마드코더   
-> HTML, CSS, VanillaJS
+> HTML, CSS, VanillaJS   
 > 20220802 ~ 20220808/
 
 #### 줌 클론코딩   
 > 노마드코더, 챌린지   
-> frontend: VanillaJS, backend:Node.js, Websokets
+> frontend: VanillaJS, backend:Node.js, Websokets   
 > 20220808 ~ 20220815   
 
 
