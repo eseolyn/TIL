@@ -27,7 +27,8 @@
 - 오직 Array객체에서만 사용가능한 메서드였으나 ES6부터는 Map, Set 등에서도 지원됨
 - break; 사용 불가  
 - for문보다 속도가 빠름
-- 기존 배열의 값이 바뀜
+- 기존 배열 값이 변경됨
+- return 값이 없기 때문에 이 코드를 변수에 할당해도 undefined가 할당된다.  
 
 
 ## Array.prototype.map()
